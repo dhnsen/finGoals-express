@@ -1,0 +1,23 @@
+{
+  "name": "fingoals-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhnsen/finGoals-express.git"
+  },
+  "author": "Dan H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhnsen/finGoals-express/issues"
+  },
+  "homepage": "https://github.com/dhnsen/finGoals-express#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
