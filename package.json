@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app.js",
+    "winDev": "@powershell $env:DEBUG='*,-express:router*' ; nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
   }
 }
