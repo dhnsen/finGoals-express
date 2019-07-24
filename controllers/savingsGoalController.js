@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const uri = "http://localhost:5000/api/SavingsGoal";
 
-const getGoals = function (userName) {
+const goals = function (userName) {
     return axios.get(uri)
         .then(function (response) {
             console.log(response);
@@ -14,3 +14,5 @@ const getGoals = function (userName) {
 
         });
 };
+
+module.exports = goals;
