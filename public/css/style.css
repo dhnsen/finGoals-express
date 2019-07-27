@@ -1,0 +1,17 @@
+#goals-section {}
+
+.goal-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-width: thin;
+    border-style: solid;
+}
+
+.goal-title {
+    float: left;
+}
+
+.goal-amount-paid {
+    float: right;
+}
