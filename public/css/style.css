@@ -1,4 +1,6 @@
-#goals-section {}
+#goals-section {
+    display: block;
+}
 
 .goal-container {
     width: 500px;
