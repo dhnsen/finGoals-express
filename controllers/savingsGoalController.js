@@ -1,18 +1,25 @@
-const axios = require('axios');
+const http = require('http');
 
-const uri = "http://localhost:5000/api/SavingsGoal";
+let goals;
 
-const goals = function (userName) {
-    return axios.get(uri)
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-        .finally(function () {
-
-        });
+const options = {
+    host: 'localhost',
+    port: 5000,
+    path: '/api/SavingsGoal',
+    method: 'GET'
 };
+
+http.request(options, function (res) {
+    var body = '';
+
+    res.on('data', function (chunk) {
+        body += chunk;
+    });
+
+    res.on('end', function () {
+        goals = JSON.parse(body);
+        console.log(goals)
+    })
+}).end();
 
 module.exports = goals;
